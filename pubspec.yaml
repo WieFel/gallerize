@@ -1,8 +1,8 @@
 name: gallerize
 description: Flutter package for creating a demo of your package/app.
 version: 0.0.1
-author:
-homepage:
+author: Felix Wielander
+homepage: wiefel.dev
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
