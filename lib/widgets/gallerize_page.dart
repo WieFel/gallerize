@@ -41,47 +41,49 @@ class _GallerizePageState extends State<GallerizePage> {
 
   @override
   Widget build(BuildContext context) {
+    var actions = [
+      IconButton(
+        icon: Icon(Icons.info),
+        color: _current is GallerizeInfo ? null : Colors.white,
+        onPressed: () {
+          setState(() {
+            _current = GallerizeInfo(
+              title: widget.name,
+              description: widget.description,
+            );
+          });
+        },
+      ),
+    ];
+
+    if (widget.preview != null)
+      actions.add(IconButton(
+        icon: Icon(Icons.visibility),
+        color: _current is GallerizePreview ? null : Colors.white,
+        onPressed: () {
+          setState(() {
+            _current = GallerizePreview(
+              preview: widget.preview,
+            );
+          });
+        },
+      ));
+
+    if (widget.codeFile != null)
+      actions.add(IconButton(
+        icon: Icon(Icons.code),
+        color: _current is GallerizeCode ? null : Colors.white,
+        onPressed: () {
+          setState(() {
+            _current = GallerizeCode(codeFile: widget.codeFile);
+          });
+        },
+      ));
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.name),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.info),
-            color: _current is GallerizeInfo ? null : Colors.white,
-            onPressed: () {
-              setState(() {
-                _current = GallerizeInfo(
-                  title: widget.name,
-                  description: widget.description,
-                );
-              });
-            },
-          ),
-          widget.preview != null
-              ? IconButton(
-                  icon: Icon(Icons.visibility),
-                  color: _current is GallerizePreview ? null : Colors.white,
-                  onPressed: () {
-                    setState(() {
-                      _current = GallerizePreview(
-                        preview: widget.preview,
-                      );
-                    });
-                  },
-                )
-              : null,
-          widget.codeFile != null
-              ? IconButton(
-                  icon: Icon(Icons.code),
-                  color: _current is GallerizeCode ? null : Colors.white,
-                  onPressed: () {
-                    setState(() {
-                      _current = GallerizeCode(codeFile: widget.codeFile);
-                    });
-                  },
-                )
-              : null,
-        ],
+        actions: actions,
       ),
       body: _current,
     );
