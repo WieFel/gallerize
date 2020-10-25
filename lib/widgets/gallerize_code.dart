@@ -10,8 +10,9 @@ class GallerizeCode extends StatefulWidget {
 
   /// The syntax highlighting theme.
   /// Refer to [HighlightView.theme].
-  ///
   /// [All available themes](https://github.com/pd4d10/highlight/blob/master/flutter_highlight/lib/themes)
+  ///
+  /// Defaults to [draculaTheme].
   final Map<String, TextStyle> highlightingTheme;
 
   /// Creates an instance of [GallerizeCode].
