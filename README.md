@@ -7,3 +7,18 @@ Flutter package for creating a demo of your package/app.
 ## In development!
 
 This project is still a work in progress, not yet ready for production.
+
+## Purpose of this package
+
+// TODO
+
+## How to use it?
+
+// TODO
+1. ...
+2. ...
+3. ...
+
+### Syntax highlighting
+
+// TODO
