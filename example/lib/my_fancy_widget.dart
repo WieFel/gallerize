@@ -1,10 +1,13 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class MyFancyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("My Fancy Widget!!!"),
+    return Container(
+      color: Colors.blue,
+      child: Center(
+        child: Text("My Fancy Widget!"),
+      ),
     );
   }
 }
