@@ -54,32 +54,32 @@ import 'package:gallerize/gallerize.dart';
 ```
 4. Use the `GallerizePage` widget within your app:
 ```dart
-    MaterialApp(
-      title: 'My Fancy Widget Gallery',
-      theme: GallerizeThemeData.darkThemeData,
-      home: GallerizePage(
-          name: "My Fancy Widget",
-          description:
-              "This is a gallery app demoing the fancy widget that I created. "
-              "With the help of the fancy widget, you can create the "
-              "fanciest app you have ever seen!",
-          codeFile: "lib/my_fancy_widget.dart",
-          preview: MyFancyWidget()),
-    )
+MaterialApp(
+  title: 'My Fancy Widget Gallery',
+  theme: GallerizeThemeData.darkThemeData,
+  home: GallerizePage(
+      name: "My Fancy Widget",
+      description:
+          "This is a gallery app demoing the fancy widget that I created. "
+          "With the help of the fancy widget, you can create the "
+          "fanciest app you have ever seen!",
+      codeFile: "lib/my_fancy_widget.dart",
+      preview: MyFancyWidget()),
+)
 ```
 `GallerizePage` expects at least a `name` and a `description`, which are shown in the info-tab. `codeFile` is used to tell **gallerize** which dart code to show in the code-tab. `preview` defines the widget that should be shown in the preview-tab.
 
-### Setting the app theme
+## Setting the app theme
 
 To change the theme for your gallery-app, you can use two themes offered by **gallerize**, which were taken from [Flutter Gallery](https://gallery.flutter.dev/):
 ```dart
-    MaterialApp(
-      theme: GallerizeThemeData.darkThemeData,
-    )
+MaterialApp(
+  theme: GallerizeThemeData.darkThemeData,
+)
 ```
 The two offered themes are `GallerizeThemeData.darkThemeData` and `GallerizeThemeData.lightThemeData`.
 
-### Changin the syntax highlighting theme
+## Changin the syntax highlighting theme
 
 **gallerize** internally uses [flutter_highlight](https://pub.dev/packages/flutter_highlight) for syntax highlighting. See [all available themes](https://github.com/pd4d10/highlight/blob/master/flutter_highlight/lib/themes).
 
@@ -90,9 +90,9 @@ import 'package:flutter_highlight/themes/a11y-dark.dart';
 ```
 2. Set the theme in your `GallerizePage`:
 ```dart
-      GallerizePage(
-          highlightingTheme: a11yDarkTheme
-          ...
-      )
+GallerizePage(
+    highlightingTheme: a11yDarkTheme
+    ...
+)
 ```
 The default theme used is `draculaTheme` (`'package:flutter_highlight/themes/dracula.dart'`)
