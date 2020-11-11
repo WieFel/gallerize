@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - 8 October 2020
 
-* TODO: Describe initial release.
+- Initial implementation of the gallerize functionality: `GallerizePage`, `GallerizeInfo`, `GallerizePreview` and `GallerizeCode`
