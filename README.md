@@ -2,7 +2,7 @@
 
 [![pub.dev](https://img.shields.io/pub/v/gallerize?logo=dart)](https://pub.dev/packages/gallerize)
 
-Flutter package for creating a gallery (demo) of your package/widget.
+Flutter package for creating [Flutter Gallery](https://gallery.flutter.dev)-like gallery/demo for your package/widget.
 
 ## ⚠ In development!
 
@@ -97,3 +97,20 @@ GallerizePage(
 )
 ```
 The default theme used is `draculaTheme` (`'package:flutter_highlight/themes/dracula.dart'`)
+
+## TODO
+- Github Pages + Github Action Setup - to host the example project, with CD - any push to master branch triggers flutter build web -> commit/createPR to gh-pages branch-> changes reflected to "Github Pages"
+- Add "Gallery" Shield - which users can put in their README (https://shields.io/)
+- Multi-screen size support (toggle for fullscreen/mobile view)
+
+## Contribute
+Check out the [Purpose of gallerize package](https://github.com/WieFel/gallerize/issues/1#issuecomment-709350953) before you begin with any contibution.
+
+1. You'll need a GitHub account.
+2. Fork the [gallerize repository](https://github.com/WieFel/gallerize).
+3. Pick an issue to work on from the [issue list](https://github.com/WieFel/gallerize/issues).
+4. Implement it.
+5. Add your name and email in `authors` section in `pubspec.yaml` file. (as soon as `pubspec.yaml` is set up for it...)
+6. Create a pull request.
+7. Star this project. ⭐
+8. Become a hero!! 🎉
