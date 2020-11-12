@@ -6,16 +6,16 @@ import 'package:gallerize/gallerize.dart';
 /// switch between info, preview and source code pages concerning the given demo.
 class GallerizePage extends StatefulWidget {
   /// The name of the package/widget.
-  String name;
+  final String name;
 
   /// Description of the package/widget.
-  String description;
+  final String description;
 
   /// Path to the file containing the sample code.
-  String codeFile;
+  final String codeFile;
 
   /// `Widget` representing a preview of the given package/widget to demonstrate.
-  Widget preview;
+  final Widget preview;
 
   /// The syntax highlighting theme.
   /// Refer to [HighlightView.theme].
