@@ -1,3 +1,7 @@
+## [0.0.3] - 12 November 2020
+
+- Updated images in readme.
+
 ## [0.0.2] - 12 November 2020
 
 - Package ready for use.
