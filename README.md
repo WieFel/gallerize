@@ -5,10 +5,6 @@
 
 Flutter package for creating [Flutter Gallery](https://gallery.flutter.dev)-like gallery/demo for your package/widget.
 
-## ⚠ In development!
-
-This project is still a work in progress, not yet ready for production.
-
 
 ## Purpose of this package
 
