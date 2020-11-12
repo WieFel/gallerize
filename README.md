@@ -77,7 +77,7 @@ MaterialApp(
 ```
 The two offered themes are `GallerizeThemeData.darkThemeData` and `GallerizeThemeData.lightThemeData`.
 
-## Changin the syntax highlighting theme
+## Changing the syntax highlighting theme
 
 **gallerize** internally uses [flutter_highlight](https://pub.dev/packages/flutter_highlight) for syntax highlighting. See [all available themes](https://github.com/pd4d10/highlight/blob/master/flutter_highlight/lib/themes).
 
