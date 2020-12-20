@@ -95,9 +95,18 @@ GallerizePage(
 ```
 The default theme used is `draculaTheme` (`'package:flutter_highlight/themes/dracula.dart'`)
 
+## gallerize badge [![gallerize](https://img.shields.io/badge/gallerize-show%20demo-purple?logo=flutter&logoColor=blue)](https://github.com/WieFel/gallerize)
+
+There is a **gallerize** badge that you can put on your project's `README.md`.
+
+Add this to your `README.md`:
+```markdown
+[![gallerize](https://img.shields.io/badge/gallerize-show%20demo-purple?logo=flutter&logoColor=blue)](<URL_TO_YOUR_GALLERY_PAGE>)
+```
+For customizing the badge, see https://shields.io/
+
 ## TODO
 - Github Pages + Github Action Setup - to host the example project, with CD - any push to master branch triggers flutter build web -> commit/createPR to gh-pages branch-> changes reflected to "Github Pages"
-- Add "Gallery" Shield - which users can put in their README (https://shields.io/)
 - Multi-screen size support (toggle for fullscreen/mobile view)
 
 ## Contribute
