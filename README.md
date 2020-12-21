@@ -95,13 +95,13 @@ GallerizePage(
 ```
 The default theme used is `draculaTheme` (`'package:flutter_highlight/themes/dracula.dart'`)
 
-## gallerize badge [![gallerize](https://img.shields.io/badge/gallerize-show%20demo-purple?logo=flutter&logoColor=blue)](https://github.com/WieFel/gallerize)
+## gallerize badge [![gallerize](https://img.shields.io/badge/gallerize-check%20demo-purple?logo=flutter&logoColor=blue)](https://github.com/WieFel/gallerize)
 
 There is a **gallerize** badge that you can put on your project's `README.md`.
 
 Add this to your `README.md`:
 ```markdown
-[![gallerize](https://img.shields.io/badge/gallerize-show%20demo-purple?logo=flutter&logoColor=blue)](<URL_TO_YOUR_GALLERY_PAGE>)
+[![gallerize](https://img.shields.io/badge/gallerize-check%20demo-purple?logo=flutter&logoColor=blue)](<URL_TO_YOUR_GALLERY_PAGE>)
 ```
 For customizing the badge, see https://shields.io/
 
