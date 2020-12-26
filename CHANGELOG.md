@@ -1,3 +1,9 @@
+## [0.0.4] - 26 December 2020
+
+- Created gallerize badge.
+- Hosted example project on the web.
+- Updated project readme.
+
 ## [0.0.3] - 12 November 2020
 
 - Updated images in readme.
