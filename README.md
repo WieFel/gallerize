@@ -1,5 +1,6 @@
 # gallerize
 
+[![gallerize](https://img.shields.io/badge/gallerize-check%20demo-purple?logo=flutter&logoColor=blue)](https://wiefel.github.io/gallerize/#/)
 [![pub.dev](https://img.shields.io/pub/v/gallerize?logo=dart)](https://pub.dev/packages/gallerize)
 [![analysis](https://github.com/WieFel/gallerize/workflows/analysis/badge.svg)](https://github.com/WieFel/gallerize/actions?query=workflow%3Aanalysis)
 
@@ -95,7 +96,7 @@ GallerizePage(
 ```
 The default theme used is `draculaTheme` (`'package:flutter_highlight/themes/dracula.dart'`)
 
-## gallerize badge [![gallerize](https://img.shields.io/badge/gallerize-check%20demo-purple?logo=flutter&logoColor=blue)](https://github.com/WieFel/gallerize)
+## gallerize badge [![gallerize](https://img.shields.io/badge/gallerize-check%20demo-purple?logo=flutter&logoColor=blue)](https://wiefel.github.io/gallerize/#/)
 
 There is a **gallerize** badge that you can put on your project's `README.md`.
 
