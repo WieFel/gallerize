@@ -2,8 +2,8 @@ name: Deploy example
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - '*'
 
 jobs:
   deploy-for-web:
