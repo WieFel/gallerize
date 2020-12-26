@@ -15,7 +15,7 @@ The **gallerize** package can be used to demonstrate what YOUR package/widget is
 
 ## Example
 
-Suppose you created an awesome widget (`lib/my_fancy_widget.dart`) which you want to show to your friends/workmates:
+Suppose you created an awesome widget (`lib/my_fancy_widget.dart`) which you want to show to your workmates/boss or to your package's users:
 ```dart
 class MyFancyWidget extends StatelessWidget {
   @override
