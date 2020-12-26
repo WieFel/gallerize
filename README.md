@@ -107,7 +107,6 @@ Add this to your `README.md`:
 For customizing the badge, see https://shields.io/
 
 ## TODO
-- Github Pages + Github Action Setup - to host the example project, with CD - any push to master branch triggers flutter build web -> commit/createPR to gh-pages branch-> changes reflected to "Github Pages"
 - Multi-screen size support (toggle for fullscreen/mobile view)
 
 ## Contribute
