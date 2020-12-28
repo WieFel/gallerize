@@ -68,6 +68,18 @@ MaterialApp(
 ```
 `GallerizePage` expects at least a `name` and a `description`, which are shown in the info-tab. `codeFile` is used to tell **gallerize** which dart code to show in the code-tab. `preview` defines the widget that should be shown in the preview-tab.
 
+## Automatically publish demo app (Flutter web) on GitHub pages
+If you want to publish the **gallerize** demo app for web on your project's GitHub pages, follow these steps:
+1. Set up [Flutter for web](https://flutter.dev/docs/get-started/web) and check that your project runs fine on web locally.
+2. Set up GitHub action by creating a file `.github/workflows/deploy_web.yaml` within your project root.
+3. Get the code from [this gist](https://gist.github.com/WieFel/735b87c5cc5c63a683d90a9bda588f30) and paste it into your `deploy_web.yaml` file.
+4. Modify it accordingly:
+    - If you want to build and deploy your project's `example/` subfolder, you are good to go.
+    - If you want to build and deploy your project's root folder, remove **line 20** from the workflow file and change **line 27** to `FOLDER: build/web`.
+5. Push your code and create a tag in your repo. Upon tag creation, the action triggers and your page should be accessible via `https://<user>.github.io/<repository>/`.
+
+For more information, check [this medium article](https://wiefel.medium.com/automatically-deploy-flutter-web-project-to-github-pages-using-github-actions-2ec743e830fa)!
+
 ## Setting the app theme
 
 To change the theme for your gallery-app, you can use two themes offered by **gallerize**, which were taken from [Flutter Gallery](https://gallery.flutter.dev/):
