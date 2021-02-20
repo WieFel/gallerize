@@ -65,7 +65,7 @@ class _GallerizePageState extends State<GallerizePage> {
       ),
     ];
 
-    if (widget.preview != null)
+    if (widget.preview != null) {
       actions.add(IconButton(
         icon: Icon(Icons.visibility),
         color: _current is GallerizePreview ? null : Colors.white,
@@ -77,8 +77,9 @@ class _GallerizePageState extends State<GallerizePage> {
           });
         },
       ));
+    }
 
-    if (widget.codeFile != null)
+    if (widget.codeFile != null) {
       actions.add(IconButton(
         icon: Icon(Icons.code),
         color: _current is GallerizeCode ? null : Colors.white,
@@ -91,6 +92,7 @@ class _GallerizePageState extends State<GallerizePage> {
           });
         },
       ));
+    }
 
     return Scaffold(
       appBar: AppBar(
