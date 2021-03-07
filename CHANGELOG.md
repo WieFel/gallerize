@@ -1,3 +1,7 @@
+## [0.1.0] - 07 March 2021
+
+- Null safety
+
 ## [0.0.4] - 26 December 2020
 
 - Created gallerize badge.
