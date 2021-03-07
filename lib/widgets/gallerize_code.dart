@@ -27,8 +27,6 @@ class GallerizeCode extends StatefulWidget {
 }
 
 class _GallerizeCodeState extends State<GallerizeCode> {
-  String code;
-
   @override
   Widget build(BuildContext context) {
     return Center(
