@@ -9,7 +9,7 @@ class GallerizeInfo extends StatelessWidget {
   final String description;
 
   /// Creates an instance of [GallerizeInfo].
-  GallerizeInfo({Key key, @required this.title, @required this.description})
+  GallerizeInfo({Key? key, required this.title, required this.description})
       : super(key: key);
 
   @override

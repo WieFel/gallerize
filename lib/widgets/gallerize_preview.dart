@@ -6,7 +6,7 @@ class GallerizePreview extends StatelessWidget {
   final Widget preview;
 
   /// Creates an instance of [GallerizePreview].
-  GallerizePreview({Key key, @required this.preview});
+  GallerizePreview({Key? key, required this.preview});
 
   @override
   Widget build(BuildContext context) {

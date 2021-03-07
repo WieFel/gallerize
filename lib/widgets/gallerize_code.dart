@@ -17,8 +17,8 @@ class GallerizeCode extends StatefulWidget {
 
   /// Creates an instance of [GallerizeCode].
   GallerizeCode({
-    Key key,
-    @required this.codeFile,
+    Key? key,
+    required this.codeFile,
     this.highlightingTheme = draculaTheme,
   }) : super(key: key);
 
@@ -37,7 +37,7 @@ class _GallerizeCodeState extends State<GallerizeCode> {
             return SizedBox.expand(
               child: SingleChildScrollView(
                 child: HighlightView(
-                  snapshot.data,
+                  snapshot.data!,
                   language: "dart",
                   theme: widget.highlightingTheme,
                   padding: EdgeInsets.all(8.0),

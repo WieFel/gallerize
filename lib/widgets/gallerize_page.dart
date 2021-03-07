@@ -12,10 +12,10 @@ class GallerizePage extends StatefulWidget {
   final String description;
 
   /// Path to the file containing the sample code.
-  final String codeFile;
+  final String? codeFile;
 
   /// `Widget` representing a preview of the given package/widget to demonstrate.
-  final Widget preview;
+  final Widget? preview;
 
   /// The syntax highlighting theme.
   /// Refer to [HighlightView.theme].
@@ -26,9 +26,9 @@ class GallerizePage extends StatefulWidget {
 
   /// Creates an instance of [GallerizePage].
   GallerizePage(
-      {Key key,
-      @required this.name,
-      @required this.description,
+      {Key? key,
+      required this.name,
+      required this.description,
       this.codeFile,
       this.preview,
       this.highlightingTheme = draculaTheme})
@@ -39,7 +39,7 @@ class GallerizePage extends StatefulWidget {
 }
 
 class _GallerizePageState extends State<GallerizePage> {
-  Widget _current;
+  Widget? _current;
 
   @override
   void initState() {
@@ -72,7 +72,7 @@ class _GallerizePageState extends State<GallerizePage> {
         onPressed: () {
           setState(() {
             _current = GallerizePreview(
-              preview: widget.preview,
+              preview: widget.preview!,
             );
           });
         },
@@ -86,7 +86,7 @@ class _GallerizePageState extends State<GallerizePage> {
         onPressed: () {
           setState(() {
             _current = GallerizeCode(
-              codeFile: widget.codeFile,
+              codeFile: widget.codeFile!,
               highlightingTheme: widget.highlightingTheme,
             );
           });
