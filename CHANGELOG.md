@@ -1,3 +1,7 @@
+## [0.1.1] - 11 April 2021
+
+- "Copy all" button for code widget
+
 ## [0.1.0] - 07 March 2021
 
 - Null safety
