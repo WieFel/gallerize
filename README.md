@@ -13,6 +13,12 @@ The **gallerize** package can be used to demonstrate what YOUR package/widget is
 
 **gallerize** allows you to take your own package/widget and create an app around it which provides a description, a preview and exemplary source code, just like [Flutter Gallery](https://gallery.flutter.dev/) does it for the material and cupertino widgets. **gallerize** saves you from creating boilerplate code for creating a gallery app structure, importing themes etc.
 
+### Showcase
+**gallerize** is used by:
+- [Backdrop package](https://pub.dev/packages/backdrop) -> See demo [here](https://fluttercommunity.github.io/backdrop/demo/#/)
+- [HSV Color Pickers package](https://pub.dev/packages/hsv_color_pickers) -> See demo [here](https://wiefel.github.io/hsv_color_pickers/#/)
+- [Gallerize package itself](https://pub.dev/packages/gallerize) -> See demo [here](https://wiefel.github.io/gallerize/#/)
+
 ## Example
 
 Suppose you created an awesome widget (`lib/my_fancy_widget.dart`) which you want to show to your workmates/boss or to your package's users:
