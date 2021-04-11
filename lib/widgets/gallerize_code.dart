@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_highlight/flutter_highlight.dart';
 import 'package:flutter_highlight/themes/dracula.dart';
 
@@ -29,29 +30,48 @@ class GallerizeCode extends StatefulWidget {
 class _GallerizeCodeState extends State<GallerizeCode> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: FutureBuilder<String>(
-        future: DefaultAssetBundle.of(context).loadString(widget.codeFile),
-        builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
-          if (snapshot.hasData) {
-            return SizedBox.expand(
-              child: SingleChildScrollView(
-                child: HighlightView(
-                  snapshot.data!,
-                  language: "dart",
-                  theme: widget.highlightingTheme,
-                  padding: EdgeInsets.all(8.0),
-                  textStyle: TextStyle(fontSize: 12, height: 1.3),
-                ),
+    return FutureBuilder<String>(
+      future: DefaultAssetBundle.of(context).loadString(widget.codeFile),
+      builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+        if (snapshot.hasData) {
+          return SizedBox.expand(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    children: [
+                      TextButton(
+                        onPressed: () {
+                          // copy code
+                          Clipboard.setData(
+                              ClipboardData(text: snapshot.data!));
+
+                          // show snackbar
+                          ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text("Copied to clipboard!")));
+                        },
+                        child: Text("Copy all".toUpperCase()),
+                      ),
+                    ],
+                  ),
+                  HighlightView(
+                    snapshot.data!,
+                    language: "dart",
+                    theme: widget.highlightingTheme,
+                    padding: EdgeInsets.all(8.0),
+                    textStyle: TextStyle(fontSize: 12, height: 1.3),
+                  ),
+                ],
               ),
-            );
-          } else if (snapshot.hasError) {
-            return Text(snapshot.error.toString());
-          } else {
-            return CircularProgressIndicator();
-          }
-        },
-      ),
+            ),
+          );
+        } else if (snapshot.hasError) {
+          return Text(snapshot.error.toString());
+        } else {
+          return CircularProgressIndicator();
+        }
+      },
     );
   }
 }
