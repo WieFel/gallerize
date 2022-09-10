@@ -11,12 +11,10 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_highlight: ^0.7.0
-  google_fonts: ^2.0.0
+  google_fonts: ^3.0.1
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  pedantic: ^1.11.0
+  flutter_lints: ^2.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
