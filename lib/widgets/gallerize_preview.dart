@@ -6,16 +6,22 @@ class GallerizePreview extends StatelessWidget {
   final Widget preview;
 
   /// Creates an instance of [GallerizePreview].
-  GallerizePreview({Key? key, required this.preview});
+  const GallerizePreview({
+    Key? key,
+    required this.preview,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(16.0),
+      margin: const EdgeInsets.all(16.0),
       child: ClipRRect(
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(8.0), topRight: Radius.circular(8.0)),
-          child: preview),
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(8.0),
+          topRight: Radius.circular(8.0),
+        ),
+        child: preview,
+      ),
     );
   }
 }

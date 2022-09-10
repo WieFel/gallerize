@@ -25,7 +25,7 @@ class GallerizePage extends StatefulWidget {
   final Map<String, TextStyle> highlightingTheme;
 
   /// Creates an instance of [GallerizePage].
-  GallerizePage(
+  const GallerizePage(
       {Key? key,
       required this.name,
       required this.description,
@@ -35,10 +35,10 @@ class GallerizePage extends StatefulWidget {
       : super(key: key);
 
   @override
-  _GallerizePageState createState() => _GallerizePageState();
+  GallerizePageState createState() => GallerizePageState();
 }
 
-class _GallerizePageState extends State<GallerizePage> {
+class GallerizePageState extends State<GallerizePage> {
   Widget? _current;
 
   @override
@@ -55,7 +55,7 @@ class _GallerizePageState extends State<GallerizePage> {
         title: Text(widget.name),
         actions: [
           IconButton(
-            icon: Icon(Icons.info),
+            icon: const Icon(Icons.info),
             color: _current is GallerizeInfo ? null : Colors.white,
             onPressed: () {
               setState(() {
@@ -68,7 +68,7 @@ class _GallerizePageState extends State<GallerizePage> {
           ),
           if (widget.preview != null)
             IconButton(
-              icon: Icon(Icons.visibility),
+              icon: const Icon(Icons.visibility),
               color: _current is GallerizePreview ? null : Colors.white,
               onPressed: () {
                 setState(() {
@@ -80,7 +80,7 @@ class _GallerizePageState extends State<GallerizePage> {
             ),
           if (widget.codeFile != null)
             IconButton(
-              icon: Icon(Icons.code),
+              icon: const Icon(Icons.code),
               color: _current is GallerizeCode ? null : Colors.white,
               onPressed: () {
                 setState(() {

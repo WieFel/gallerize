@@ -17,17 +17,17 @@ class GallerizeCode extends StatefulWidget {
   final Map<String, TextStyle> highlightingTheme;
 
   /// Creates an instance of [GallerizeCode].
-  GallerizeCode({
+  const GallerizeCode({
     Key? key,
     required this.codeFile,
     this.highlightingTheme = draculaTheme,
   }) : super(key: key);
 
   @override
-  _GallerizeCodeState createState() => _GallerizeCodeState();
+  GallerizeCodeState createState() => GallerizeCodeState();
 }
 
-class _GallerizeCodeState extends State<GallerizeCode> {
+class GallerizeCodeState extends State<GallerizeCode> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<String>(
@@ -49,7 +49,8 @@ class _GallerizeCodeState extends State<GallerizeCode> {
 
                           // show snackbar
                           ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(content: Text("Copied to clipboard!")));
+                              const SnackBar(
+                                  content: Text("Copied to clipboard!")));
                         },
                         child: Text("Copy all".toUpperCase()),
                       ),
@@ -59,8 +60,8 @@ class _GallerizeCodeState extends State<GallerizeCode> {
                     snapshot.data!,
                     language: "dart",
                     theme: widget.highlightingTheme,
-                    padding: EdgeInsets.all(8.0),
-                    textStyle: TextStyle(fontSize: 12, height: 1.3),
+                    padding: const EdgeInsets.all(8.0),
+                    textStyle: const TextStyle(fontSize: 12, height: 1.3),
                   ),
                 ],
               ),
@@ -69,7 +70,7 @@ class _GallerizeCodeState extends State<GallerizeCode> {
         } else if (snapshot.hasError) {
           return Text(snapshot.error.toString());
         } else {
-          return CircularProgressIndicator();
+          return const CircularProgressIndicator();
         }
       },
     );
