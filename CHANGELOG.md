@@ -1,3 +1,7 @@
+## [0.2.0] - 10 September 2022
+
+- Upgrade project to Flutter 3.3.0
+
 ## [0.1.1] - 11 April 2021
 
 - "Copy all" button for code widget
