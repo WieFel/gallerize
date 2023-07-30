@@ -22,7 +22,7 @@ class GallerizeInfo extends StatelessWidget {
             margin: const EdgeInsets.all(16.0),
             child: Text(
               title,
-              style: Theme.of(context).textTheme.headline3,
+              style: Theme.of(context).textTheme.displaySmall,
               textAlign: TextAlign.center,
             ),
           ),
