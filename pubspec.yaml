@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_highlight: ^0.7.0
+  flutter_highlighting: ^0.9.0+11.8.0
   google_fonts: ^5.1.0
 
 dev_dependencies:
