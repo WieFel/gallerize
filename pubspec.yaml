@@ -17,8 +17,14 @@ dependencies:
 dev_dependencies:
   flutter_lints: ^2.0.2
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
+
+screenshots:
+  - description: 'Start page'
+    path: https://github.com/WieFel/gallerize/raw/master/.github/images/info.png
+  - description: 'Preview of the widget'
+    path: https://github.com/WieFel/gallerize/raw/master/.github/images/preview.png
+  - description: 'Code of the widget'
+    path: https://github.com/WieFel/gallerize/raw/master/.github/images/code.png
 
 # The following section is specific to Flutter.
 flutter:
