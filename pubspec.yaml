@@ -20,11 +20,11 @@ dev_dependencies:
 
 screenshots:
   - description: 'Start page'
-    path: https://github.com/WieFel/gallerize/raw/master/.github/images/info.png
+    path: .github/images/info.png
   - description: 'Preview of the widget'
-    path: https://github.com/WieFel/gallerize/raw/master/.github/images/preview.png
+    path: .github/images/preview.png
   - description: 'Code of the widget'
-    path: https://github.com/WieFel/gallerize/raw/master/.github/images/code.png
+    path: .github/images/code.png
 
 # The following section is specific to Flutter.
 flutter:
