@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_highlight/flutter_highlight.dart';
-import 'package:flutter_highlight/themes/dracula.dart';
+import 'package:flutter_highlighting/flutter_highlighting.dart';
+import 'package:flutter_highlighting/themes/dracula.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:highlighting/languages/dart.dart';
 
 /// Class for presenting the source code of a given package/widget.
 class GallerizeCode extends StatefulWidget {
@@ -58,10 +60,10 @@ class GallerizeCodeState extends State<GallerizeCode> {
                   ),
                   HighlightView(
                     snapshot.data!,
-                    language: "dart",
+                    languageId: dart.id,
                     theme: widget.highlightingTheme,
                     padding: const EdgeInsets.all(8.0),
-                    textStyle: const TextStyle(fontSize: 12, height: 1.3),
+                    textStyle: GoogleFonts.firaCode(),
                   ),
                 ],
               ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_highlight/themes/dracula.dart';
+import 'package:flutter_highlighting/themes/dracula.dart';
 import 'package:gallerize/gallerize.dart';
 
 /// Class for presenting the demo of a package/widget to the user. The user can
@@ -25,14 +25,14 @@ class GallerizePage extends StatefulWidget {
   final Map<String, TextStyle> highlightingTheme;
 
   /// Creates an instance of [GallerizePage].
-  const GallerizePage(
-      {Key? key,
-      required this.name,
-      required this.description,
-      this.codeFile,
-      this.preview,
-      this.highlightingTheme = draculaTheme})
-      : super(key: key);
+  const GallerizePage({
+    Key? key,
+    required this.name,
+    required this.description,
+    this.codeFile,
+    this.preview,
+    this.highlightingTheme = draculaTheme,
+  }) : super(key: key);
 
   @override
   GallerizePageState createState() => GallerizePageState();

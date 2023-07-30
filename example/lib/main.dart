@@ -4,16 +4,18 @@ import 'package:gallerize/gallerize.dart';
 import 'package:gallerize/themes/gallerize_theme_data.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My Fancy Widget Gallery',
       theme: GallerizeThemeData.darkThemeData,
-      home: GallerizePage(
+      home: const GallerizePage(
           name: "My Fancy Widget",
           description:
               "This is a gallery app demoing the fancy widget that I created. "

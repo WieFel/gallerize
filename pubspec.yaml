@@ -4,20 +4,27 @@ version: 0.2.0
 repository: https://github.com/WieFel/gallerize
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.12.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_highlight: ^0.7.0
-  google_fonts: ^3.0.1
+  flutter_highlighting: ^0.9.0+11.8.0
+  google_fonts: ^5.1.0
+  highlighting: ^0.9.0+11.8.0
 
 dev_dependencies:
-  flutter_lints: ^2.0.1
+  flutter_lints: ^2.0.2
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
+
+screenshots:
+  - description: 'Start page'
+    path: https://github.com/WieFel/gallerize/raw/master/.github/images/info.png
+  - description: 'Preview of the widget'
+    path: https://github.com/WieFel/gallerize/raw/master/.github/images/preview.png
+  - description: 'Code of the widget'
+    path: https://github.com/WieFel/gallerize/raw/master/.github/images/code.png
 
 # The following section is specific to Flutter.
 flutter:
