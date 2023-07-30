@@ -19,7 +19,7 @@ dev_dependencies:
 
 
 screenshots:
-  - description: 'Start page'
+  - description: 'Start page of the gallerize app'
     path: screenshots/info.png
   - description: 'Preview of the widget'
     path: screenshots/preview.png
