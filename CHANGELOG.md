@@ -1,4 +1,4 @@
-## [0.3.0] - 10 September 2022
+## [0.3.0] - 30 July 2023
 
 - Upgrade to Flutter 3.10.6
 - Add screenshots to pub.dev
