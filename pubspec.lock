@@ -79,7 +79,7 @@ packages:
     source: hosted
     version: "5.1.0"
   highlighting:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: highlighting
       sha256: "196005ed9c98ee559939fcecd466fa941b9e99b3a93394691b86780ad4da50f3"
