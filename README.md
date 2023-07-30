@@ -37,9 +37,9 @@ class MyFancyWidget extends StatelessWidget {
 ```
 
 Using **gallerize** you can easily create an app that looks as follows:<br/>
-<img src="https://github.com/WieFel/gallerize/raw/master/.github/images/info.png"  height="500" alt="Info tab of example app"> 
-<img src="https://github.com/WieFel/gallerize/raw/master/.github/images/preview.png"  height="500" alt="Preview tab of example app"> 
-<img src="https://github.com/WieFel/gallerize/raw/master/.github/images/code.png"  height="500" alt="Code tab of example app">
+<img src="https://github.com/WieFel/gallerize/raw/master/screenshots/info.png"  height="500" alt="Info tab of example app"> 
+<img src="https://github.com/WieFel/gallerize/raw/master/screenshots/preview.png"  height="500" alt="Preview tab of example app"> 
+<img src="https://github.com/WieFel/gallerize/raw/master/screenshots/code.png"  height="500" alt="Code tab of example app">
 
 ## How to use it?
 

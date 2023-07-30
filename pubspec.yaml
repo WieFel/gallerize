@@ -20,11 +20,11 @@ dev_dependencies:
 
 screenshots:
   - description: 'Start page'
-    path: .github/images/info.png
+    path: screenshots/info.png
   - description: 'Preview of the widget'
-    path: .github/images/preview.png
+    path: screenshots/preview.png
   - description: 'Code of the widget'
-    path: .github/images/code.png
+    path: screenshots/code.png
 
 # The following section is specific to Flutter.
 flutter:
