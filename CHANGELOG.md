@@ -1,3 +1,9 @@
+## [0.3.0] - 10 September 2022
+
+- Upgrade to Flutter 3.10.6
+- Add screenshots to pub.dev
+- Improve code snippet view
+
 ## [0.2.0] - 10 September 2022
 
 - Upgrade project to Flutter 3.3.0
