@@ -7,9 +7,9 @@ class GallerizePreview extends StatelessWidget {
 
   /// Creates an instance of [GallerizePreview].
   const GallerizePreview({
-    Key? key,
+    super.key,
     required this.preview,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

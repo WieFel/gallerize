@@ -26,13 +26,13 @@ class GallerizePage extends StatefulWidget {
 
   /// Creates an instance of [GallerizePage].
   const GallerizePage({
-    Key? key,
+    super.key,
     required this.name,
     required this.description,
     this.codeFile,
     this.preview,
     this.highlightingTheme = draculaTheme,
-  }) : super(key: key);
+  });
 
   @override
   GallerizePageState createState() => GallerizePageState();

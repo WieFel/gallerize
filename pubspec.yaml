@@ -4,18 +4,18 @@ version: 0.3.0
 repository: https://github.com/WieFel/gallerize
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
+  sdk: '>=2.17.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_highlighting: ^0.9.0+11.8.0
-  google_fonts: ^5.1.0
+  google_fonts: ^6.2.1
   highlighting: ^0.9.0+11.8.0
 
 dev_dependencies:
-  flutter_lints: ^2.0.2
+  flutter_lints: ^5.0.0
 
 
 screenshots:
