@@ -20,10 +20,10 @@ class GallerizeCode extends StatefulWidget {
 
   /// Creates an instance of [GallerizeCode].
   const GallerizeCode({
-    Key? key,
+    super.key,
     required this.codeFile,
     this.highlightingTheme = draculaTheme,
-  }) : super(key: key);
+  });
 
   @override
   GallerizeCodeState createState() => GallerizeCodeState();

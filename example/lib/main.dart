@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: GallerizeThemeData.darkThemeData,
       home: const GallerizePage(
         name: "My Fancy Widget",
-        description: "This is a gallery app demoing the fancy widget that I created. "
+        description:
+            "This is a gallery app demoing the fancy widget that I created. "
             "With the help of the fancy widget, you can create the "
             "fanciest app you have ever seen!",
         codeFile: "lib/my_fancy_widget.dart",

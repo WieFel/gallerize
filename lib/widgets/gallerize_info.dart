@@ -10,8 +10,7 @@ class GallerizeInfo extends StatelessWidget {
 
   /// Creates an instance of [GallerizeInfo].
   const GallerizeInfo(
-      {Key? key, required this.title, required this.description})
-      : super(key: key);
+      {super.key, required this.title, required this.description});
 
   @override
   Widget build(BuildContext context) {
