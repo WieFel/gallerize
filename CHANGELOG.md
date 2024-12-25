@@ -1,3 +1,7 @@
+## [0.4.0] - 25 December 2024
+
+- Upgrade to Flutter 3.27.1
+
 ## [0.3.0] - 30 July 2023
 
 - Upgrade to Flutter 3.10.6
